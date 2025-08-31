@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@keyframes about-fade {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-about-fade {
+  animation: about-fade 1s ease-out;
+}
+
+@keyframes about-fade {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-about-fade {
+  animation: about-fade 1s ease-out;
+}
+
+.project-card {
+  border: 1px solid #e5e7eb;
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: scale(1.05);
+}
+.project-card a {
+  text-decoration: none;
+}
+
+
