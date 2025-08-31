@@ -22,9 +22,7 @@ To run locally:
 
 ## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
+React JS, Tailwind CSS
 
 ## Contact
 
