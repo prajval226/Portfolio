@@ -3,6 +3,7 @@
 Welcome to my personal portfolio website!  
 This site showcases my projects, skills, and experience.
 
+<<<<<<< HEAD
 ## Features
 
 - Responsive design
@@ -25,6 +26,8 @@ To run locally:
 - HTML
 - CSS
 - JavaScript
+=======
+>>>>>>> cec71909df731f2086c40eeb1d6510281a290851
 
 ## Contact
 
