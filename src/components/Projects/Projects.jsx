@@ -5,6 +5,7 @@ import qualityImg from "../Images/Cover Pic - Quick Commerce Analysis.png";
 import taxiimg from "../Images/Cover Pic - Taxi Performance Analytics.png";
 import demoImg2 from "../Images/demo2-list.png";
 
+const BASE_PATH = "/Portfolio";
 
 const projects = [
   {
@@ -12,18 +13,17 @@ const projects = [
     id: "portfolio-website",
     description:
       "Take a look into a quick commerce company's Power BI dashboard",
-    link: "/project/portfolio-website", // Correct route for detail page
+    link: `${BASE_PATH}/project/portfolio-website`, // <-- add BASE_PATH
     cover: qualityImg,
     internal: true,
   },
   {
     title: "Taxi Performance Analytics",
     description: "This Power BI dashboard offers a comprehensive look at a year's worth of ride-sharing data from a cab service",
-    link: "/project/Project2Page", // Correct route for detail page
+    link: `${BASE_PATH}/project/Project2Page`, // <-- add BASE_PATH
     cover: taxiimg,
     internal: false,
   },
-  
 ];
 
 const getRows = (projects) => {

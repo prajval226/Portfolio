@@ -89,9 +89,7 @@ function AppContent() {
 }
 
 const App = () => (
-  <Router>
-    <AppContent />
-  </Router>
+  <AppContent />
 );
 
 export default App;
