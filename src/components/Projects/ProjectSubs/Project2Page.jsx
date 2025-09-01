@@ -80,7 +80,7 @@ const galleryItems = [
 
 ];
 
-const ProjectPage = () => {
+const Project2Page = () => {
   const navigate = useNavigate();
 
   return (
@@ -101,7 +101,6 @@ const ProjectPage = () => {
                     top: sectionTop - navbarHeight,
                     behavior: 'smooth'
                   });
-                  setMenuOpen(false); // Close menu on mobile
                 }
               }}
             >
@@ -109,9 +108,7 @@ const ProjectPage = () => {
             </a></div>
         <button
           className="inline-block px-4 py-2 bg-[#0D2226] text-white rounded hover:bg-[#1C3343] transition"
-          onClick={() => {
-            window.close();
-          }}
+          onClick={() => navigate('/')}
         >
           ❮ Back to Projects
         </button>
@@ -164,4 +161,4 @@ const ProjectPage = () => {
     </>
   );
 };
-export default ProjectPage;
+export default Project2Page;
