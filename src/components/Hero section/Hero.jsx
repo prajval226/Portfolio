@@ -1,6 +1,6 @@
 import React from "react";
 import './Hero.css'; // CSS file for additional styles
-import img1 from "../Images/dummy1.png"; // Replace with your image path
+import img1 from "../Images/Profile.webp"; // Replace with your image path
 
 
 
@@ -12,6 +12,7 @@ const Hero = () => {
         <img
             src={img1}
             alt="Your Photo"
+            loading="lazy"
             className="rounded-md shadow-lg w-150 h-150 object-cover animate-hero-fade"
         />
       </div>
