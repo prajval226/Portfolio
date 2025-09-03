@@ -1,8 +1,0 @@
-@import "tailwindcss";
-
-@media (max-width: 600px) {
-  .certifications-slider {
-    position: relative;
-    bottom: 40px;
-  }
-}

@@ -1,8 +1,0 @@
-@import "tailwindcss";
-
-/* Mobile gap between About Me section and Contact Me button */
-@media (max-width: 640px) {
-  #about {
-    margin-bottom: 2rem; /* Adjust gap size as needed */
-  }
-}
