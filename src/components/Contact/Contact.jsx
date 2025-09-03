@@ -33,7 +33,7 @@ const Contact = () => {
           <span className="font-medium text-center">LinkedIn Profile</span>
         </a>
         <a
-          href="https://github.com/prajval226"
+          href="https://github.com/iamPrajval"
           target="_blank"
           rel="noopener noreferrer"
           className="group flex items-center gap-3 bg-[#1b2a38] rounded-full p-4 hover:bg-[#1a73e8] transition text-white w-full justify-center"

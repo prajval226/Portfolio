@@ -1,6 +1,6 @@
 import React from "react";
 import './Hero.css'; // CSS file for additional styles
-import img1 from "../Images/Profile.webp"; // Replace with your image path
+import img1 from "../Images/ProfilePhoto.webp"; // Replace with your image path
 
 
 

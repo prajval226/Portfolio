@@ -44,3 +44,10 @@
 .animate-contact-btn-fade {
   animation: contact-btn-fade 0.8s ease-out;
 }
+
+/* Mobile gap between Hero section and About Me section */
+@media (max-width: 640px) {
+  #home {
+    margin-bottom: 2rem; /* Adjust gap size as needed */
+  }
+}

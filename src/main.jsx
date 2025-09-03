@@ -5,8 +5,10 @@ import { BrowserRouter } from "react-router-dom";
 
 // Handle redirected paths from 404.html for GitHub Pages SPA routing
 if (typeof window !== 'undefined' && window.location.search.startsWith('?/')) {
-  const path = window.location.search.slice(2);
-  window.history.replaceState(null, '', path);
+  const query = window.location.search.slice(2);
+  const [path, ...searchParts] = query.split('&');
+  const search = searchParts.length > 0 ? '?' + searchParts.join('&').replace(/~and~/g, '&') : '';
+  window.history.replaceState(null, '', path + search);
 }
 
 createRoot(document.getElementById('root')).render(

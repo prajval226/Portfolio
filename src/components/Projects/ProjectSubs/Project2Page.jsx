@@ -1,8 +1,8 @@
 import React from "react";
-import img1 from "../../Projects/ProjectSubs/Project_Images/Taxi Performance Analytics_page-0001.jpg";
-import img2 from "../../Projects/ProjectSubs/Project_Images/Taxi Performance Analytics_page-0002.jpg";
-import img3 from "../../Projects/ProjectSubs/Project_Images/Taxi Performance Analytics_page-0003.jpg";
-import img4 from "../../Projects/ProjectSubs/Project_Images/Taxi Performance Analytics_page-0004.jpg";
+import img1 from "./Project_Images/Taxi Performance Analytics_page-0001.jpg";
+import img2 from "./Project_Images/Taxi Performance Analytics_page-0002.jpg";
+import img3 from "./Project_Images/Taxi Performance Analytics_page-0003.jpg";
+import img4 from "./Project_Images/Taxi Performance Analytics_page-0004.jpg";
 
 import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from "react-router-dom";
 
@@ -108,9 +108,9 @@ const Project2Page = () => {
             </a></div>
         <button
           className="inline-block px-4 py-2 bg-[#0D2226] text-white rounded hover:bg-[#1C3343] transition"
-          onClick={() => navigate('/')}
+          onClick={() => window.close()}
         >
-          ❮ Back to Projects
+          ❮ Close Project
         </button>
       </nav>
       {/* Add top margin to avoid overlap with fixed navbar */}
@@ -138,7 +138,7 @@ const Project2Page = () => {
               className="flex flex-col md:flex-row bg-white rounded-lg shadow overflow-hidden"
             >
               {/* Image on the left, responsive and visible */}
-              <div className="md:w-2/3 w-full flex items-center justify-center bg-white aspect-video min-h-[250px] md:min-h-[400px]">
+              <div className="w-full md:w-2/3 flex items-center justify-center bg-white aspect-video min-h-[250px] md:min-h-[400px]">
                 <img
                   src={item.src}
                   alt={item.alt}
@@ -148,8 +148,8 @@ const Project2Page = () => {
               </div>
               {/* Description on the right */}
               <div
-                className="md:w-1/3 w-full p-4 flex flex-col justify-center items-start"
-                style={{ width: "532px" }}
+                className="w-full md:w-1/3 p-4 flex flex-col justify-center items-start"
+                style={{ maxWidth: "532px" }}
                 >
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 md:mb-4 text-[#1C3343] text-left">{item.title}</h3>
                 <p className="text-base sm:text-lg text-[#0D2226] text-left">{item.description}</p>

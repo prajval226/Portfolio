@@ -16,10 +16,6 @@ const certificates = [
     title: "Certificate 7",
   },
   {
-    src: img5,
-    title: "Certificate 1",
-  },
-  {
     src: img6,
     title: "Certificate 2",
   },

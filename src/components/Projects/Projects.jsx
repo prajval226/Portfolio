@@ -13,14 +13,14 @@ const projects = [
     id: "portfolio-website",
     description:
       "Take a look into a quick commerce company's Power BI dashboard",
-    link: `${BASE_PATH}/project/portfolio-website`, // <-- add BASE_PATH
+    link: `${BASE_PATH}/project/portfolio-website`,
     cover: qualityImg,
     internal: true,
   },
   {
     title: "Taxi Performance Analytics",
     description: "This Power BI dashboard offers a comprehensive look at a year's worth of ride-sharing data from a cab service",
-    link: `${BASE_PATH}/project/Project2Page`, // <-- add BASE_PATH
+    link: `${BASE_PATH}/project/Project2Page`,
     cover: taxiimg,
     internal: false,
   },
@@ -75,8 +75,8 @@ const Projects = () => {
         {rows.map((row, rowIdx) => (
           <div
             key={rowIdx}
-            className={`grid gap-8 justify-center 
-              sm:grid-cols-2 
+            className={`grid gap-8 justify-center
+              sm:grid-cols-2
               ${row.length === 4
                 ? "md:grid-cols-4"
                 : row.length === 3
@@ -108,24 +108,26 @@ const Projects = () => {
                       </h3>
                       <p className="text-[#0D2226] mb-4">{project.description}</p>
                       {project.internal ? (
-  <button
-    onClick={() => window.open(project.link, "_blank")}
-    className="mt-auto inline-block px-4 py-2 rounded text-white hover:opacity-90 transition-colors duration-200 mx-auto"
-    style={{ backgroundColor: "#1C3343" }}
-  >
-    View Project
-  </button>
-) : (
-  <a
-    href={project.link}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mt-auto inline-block px-4 py-2 rounded text-white hover:opacity-90 transition-colors duration-200 mx-auto"
-    style={{ backgroundColor: "#1C3343" }}
-  >
-    View Project
-  </a>
-)}
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-auto inline-block px-4 py-2 rounded text-white hover:opacity-90 transition-colors duration-200 mx-auto"
+                          style={{ backgroundColor: "#1C3343" }}
+                        >
+                          View Project
+                        </a>
+                      ) : (
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-auto inline-block px-4 py-2 rounded text-white hover:opacity-90 transition-colors duration-200 mx-auto"
+                          style={{ backgroundColor: "#1C3343" }}
+                        >
+                          View Project
+                        </a>
+                      )}
                     </div>
                   </div>
                   {shouldBlur && (
